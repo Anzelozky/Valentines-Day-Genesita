@@ -113,7 +113,10 @@ export default function Page() {
               <button
                 className={"yes-button"}
                 style={{ fontSize: yesButtonSize }}
-                onClick={() => setYesPressed(true)}
+                onClick={() => {
+                  setYesPressed(true);
+                  attemptPlay();
+                }}
               >
                 Si
               </button>
